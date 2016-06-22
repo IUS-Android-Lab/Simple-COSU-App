@@ -18,6 +18,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        nolock {
+            applicationIdSuffix '.NOLOCK'
+        }
+
+        extdpm {
+            applicationIdSuffix '.EXTDPM'
+        }
+
+        intdpm {
+            applicationIdSuffix '.INTDPM'
+        }
+    }
 }
 
 dependencies {
